@@ -1,0 +1,20 @@
+@import '../../theme.scss';
+
+.row {
+  position: relative;
+  flex: 1 0 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rowLine {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background: $font-color;
+  top: calc(50% - 5px);
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

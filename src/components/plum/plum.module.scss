@@ -1,0 +1,33 @@
+@import '../../theme.scss';
+$size: 50px;
+
+.dot {
+  height: $size;
+  width: $size;
+  border-radius: 50%;
+  z-index: 99;
+
+  &~& {
+    margin-top: 10px;
+  }
+}
+
+.Primary {
+  @extend .dot;
+  background: $plum-color1;
+}
+
+.Secondary {
+  @extend .dot;
+  background: $plum-color2;
+}
+
+.Tertiary {
+  @extend .dot;
+  background: $plum-color3;
+}
+
+.Quaternary  {
+  @extend .dot;
+  background: $plum-color4;
+}

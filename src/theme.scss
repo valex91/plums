@@ -1,0 +1,30 @@
+//colors
+$font-color: #444444;
+$plum-color1: #A23B72;
+$plum-color2: #F18F01;
+$plum-color3: #C73E1D;
+$plum-color4: #2E86AB;
+
+//embellishment
+$border-radius: 8px;
+
+//mixin
+@mixin button_style() {
+  border: 2px solid $font-color;
+  background: linear-gradient(to right, white 50%, $font-color 50%);
+  background-size: 200% 100%;
+  background-position:left bottom;
+  border-radius: $border-radius;
+  cursor: pointer;
+  height: 50px;
+  padding: 5px;
+  transition:all 0.5s ease;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    background-position:right bottom;
+    color: white;
+  }
+}

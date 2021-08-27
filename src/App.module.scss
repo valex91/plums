@@ -1,0 +1,25 @@
+@import './theme.scss';
+@import "~mobile-drag-drop/default.css";
+
+.appContainer {
+  padding: 20px 50px;
+}
+
+body {
+  color: $font-color;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  @include button_style();
+  margin-left: 10px;
+}
+
+.buttonContainer {
+  display: flex;
+  margin-left: auto;
+}

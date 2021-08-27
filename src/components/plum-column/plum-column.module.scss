@@ -1,0 +1,19 @@
+@import '../../theme.scss';
+
+.container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  flex: 1 0 25%;
+  justify-items: center;
+  align-items: center;
+}
+
+.columnLine {
+  position: absolute;
+  width: 5px;
+  height: 150%;
+  top: -20%;
+  background: $font-color;
+  border-radius: $border-radius;
+}
