@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import styles from './App.module.scss';
 import {Plums} from "./components/plums/plums.component";
 import {useWinningState} from "./services/winning-state/winning.state";
@@ -22,9 +22,11 @@ function App() {
                     </button>
                 </div>
             </header>
-            <Plums
-                onWin={() => setIsWin(true)}
-                winningState={winningState}/>
+            {
+                isWin ? null : <Plums
+                    onWin={() => setIsWin(true)}
+                    winningState={winningState}/>
+            }
         </div>
 
     );
